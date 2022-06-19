@@ -10,26 +10,29 @@
         body {
             text-align: center;
             background-color: azure;
-            margin: 200px 200px 200px 200px; 
+            /* margin: 200px 200px 200px 200px; */
         }
 
         button {
             background-color: greenyellow;
         }
 
-        div {
+        .maindiv {
             width: 420px;
             padding: 10px;
             border: 5px solid gray;
-            margin: 0 250px;
-           
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
         }
     </style>
 
 </head>
 
 <body>
-    <div>
+    <div class="maindiv">
         <h2>Leap Year Predictor</h2>
         <label><b>Enter Year: </b></label>
         <input type="text" id="year">
